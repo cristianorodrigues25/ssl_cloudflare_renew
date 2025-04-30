@@ -1,0 +1,9 @@
+[Unit]
+Description=Agendamento bimestral para renovação dos certificados SSL
+
+[Timer]
+OnCalendar=*-01 03:00:00
+Unit=renew-certificates.service
+
+[Install]
+WantedBy=timers.target
